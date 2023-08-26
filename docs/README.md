@@ -1,3 +1,6 @@
-# SimplyDi Framework
+---
+title: SimplyDi Framework Documentation
+description: This is the documentation for the SimplyDi Framework.
+---
 
-This documentation is a work in progress. Please check back later.
+This documentation is a **work in progress**. Please check back later.

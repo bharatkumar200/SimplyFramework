@@ -1,0 +1,5 @@
+title: SimplyDi Framework
+description: A FullStack PHP Framework based on Mezzio Middleware Skeleton
+remote_theme: pages-themes/dinky@v0.2.0
+plugins:
+  - jekyll-remote-theme
