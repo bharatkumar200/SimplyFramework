@@ -1,5 +1,4 @@
-website: https://bharatkumar200.github.io
-basewebsite: /SimplyFramework
+baseurl: /SimplyFramework
 highlighter: rouge
 markdown: kramdown
 permalink: date

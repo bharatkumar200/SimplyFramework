@@ -7,4 +7,4 @@ This documentation is a **work in progress**. Please check back later.
 
 ## DOCS
 
-- [Routing in SimplyDi Framework](/routing)
+- [Routing in SimplyDi Framework]({{ site.baseurl}}/routing)
