@@ -1,6 +1,8 @@
 {
   "dependencies": {
     "@tailwindcss/typography": "^0.5.9",
+    "bootstrap": "^5.3.1",
+    "bootstrap-icons": "^1.10.5",
     "tailwindcss": "^3.3.3"
   }
 }
