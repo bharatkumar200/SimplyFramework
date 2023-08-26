@@ -78,7 +78,8 @@
         "psr-4": {
             "App\\": "src/App/src/",
             "Core\\": "src/Core/src/",
-            "Auth\\": "src/Auth/src/"
+            "Auth\\": "src/Auth/src/",
+            "Admin\\": "src/Admin/src/"
         }
     },
     "autoload-dev": {
