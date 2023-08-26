@@ -22,7 +22,7 @@ class HomepageHandler implements RequestHandlerInterface
         return new HtmlResponse($this->renderer->render(
             'app::homepage',
             [
-                'setting' => setting("routes")
+                'title' => 'Welcome to SimplyFramework'
             ]
         ));
     }

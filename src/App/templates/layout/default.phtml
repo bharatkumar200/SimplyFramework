@@ -6,28 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
     <title><?= $this->e($title) ?> - mezzio</title>
     <link rel="shortcut icon" href="https://getlaminas.org/images/favicon/favicon.ico"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=JetBrains+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/static/css/tailwind.min.css">
     <?= $this->section('stylesheets') ?>
 </head>
 <body>
 
-<header class="mb-10 bg-emerald-600 text-white text-center">
-    <span class="text-4xl"><?= setting('app.name') ?></span>
+<header class="mb-10 bg-emerald-600 text-white text-center p-4">
+    <a class="text-4xl" href="<?= baseUrl() ?>"><?= setting('app.name') ?></a>
 </header>
 
-<div>
-    <main class="container">
+<div class="w-full md:w-4/5 lg:w-2/3 mx-auto">
+    <main class="container p-4">
         <?= $this->section('content') ?>
     </main>
 </div>
 
-<footer class="border-t-4 border-t-emerald-600 bg-emerald-100 mt-10">
-    <div>
+<footer class="border-t-4 border-t-emerald-600 bg-emerald-100 mt-10 p-4">
+    <div class="text-center">
         <?php if ($this->section('footer')): ?>
             <?= $this->section('footer') ?>
         <?php else: ?>
             <p>
-                &copy; <?= date('Y') ?> <a href="<?= setting('app.url') ?>"><?= setting('app.name') ?></a>
+                &copy; <?= date('Y') ?>
+                <a class="underline underline-offset-4 decoration-emerald-600"
+                   href="<?= setting('app.url') ?>" target="_blank">
+                    <?= setting('app.name') ?>
+                </a>
             </p>
         <?php endif ?>
     </div>
