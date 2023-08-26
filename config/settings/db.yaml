@@ -1,0 +1,6 @@
+db:
+  driver: mysqli
+  name: dummy
+  host: localhost
+  user: root
+  password: root

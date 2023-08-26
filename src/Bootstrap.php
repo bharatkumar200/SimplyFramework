@@ -1,11 +1,17 @@
 <?php
 
+use Mezzio\Application;
+use Mezzio\MiddlewareFactory;
+use Psr\Container\ContainerInterface;
+use SimplyDi\DotEnv\DotEnv;
+use Tracy\Debugger;
+
 /**
  * The single file containing the code to start the application
  */
 
 // include all path constants
-include_once 'Paths.php.';
+include_once __DIR__ . DIRECTORY_SEPARATOR . 'Paths.php';
 
 // Delegate static file requests back to the PHP built-in webserver
 if (PHP_SAPI === 'cli-server' && $_SERVER['SCRIPT_FILENAME'] !== __FILE__) {
@@ -16,18 +22,21 @@ if (PHP_SAPI === 'cli-server' && $_SERVER['SCRIPT_FILENAME'] !== __FILE__) {
 require VENDOR_PATH . 'autoload.php';
 
 // dotenv
-(new \SimplyDi\DotEnv(ROOT_PATH))->load();
+(new DotEnv(ROOT_PATH))->load();
+
+// tracy debugger
+Debugger::enable(Debugger::DEVELOPMENT);
 
 /**
  * Self-called anonymous function that creates its own scope and keeps the global namespace clean.
  */
 (function () {
-    /** @var \Psr\Container\ContainerInterface $container */
+    /** @var ContainerInterface $container */
     $container = require CONFIG_PATH . 'container.php';
 
-    /** @var \Mezzio\Application $app */
-    $app = $container->get(\Mezzio\Application::class);
-    $factory = $container->get(\Mezzio\MiddlewareFactory::class);
+    /** @var Application $app */
+    $app = $container->get(Application::class);
+    $factory = $container->get(MiddlewareFactory::class);
 
     // Execute programmatic/declarative middleware pipeline and routing
     // configuration statements

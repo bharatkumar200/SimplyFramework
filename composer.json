@@ -65,7 +65,8 @@
         "simplydi/dotenv": "^1.0",
         "simplydi/functions": "dev-main",
         "simplydi/simplyconfig": "dev-main",
-        "simplydi/simplymarkdown": "dev-main"
+        "simplydi/simplymarkdown": "dev-main",
+        "tracy/tracy": "^2.10"
     },
     "require-dev": {
         "laminas/laminas-development-mode": "^3.3.0",
@@ -80,7 +81,10 @@
             "Core\\": "src/Core/src/",
             "Auth\\": "src/Auth/src/",
             "Admin\\": "src/Admin/src/"
-        }
+        },
+        "files": [
+            "src/Functions.php"
+        ]
     },
     "autoload-dev": {
         "psr-4": {
