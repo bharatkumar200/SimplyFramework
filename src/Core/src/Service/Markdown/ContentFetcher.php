@@ -10,9 +10,9 @@ class ContentFetcher
 
     private MdParser $content;
 
-    public function __construct(string $contentFolderPath)
+    public function __construct()
     {
-        $this->content = new MdParser($contentFolderPath);
+        $this->content = new MdParser(ROOT_PATH . setting("markdown.path"));
     }
 
     /**

@@ -1,0 +1,3 @@
+caching:
+  enabled: true
+  path: data/cache
