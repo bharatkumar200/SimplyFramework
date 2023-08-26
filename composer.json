@@ -13,14 +13,12 @@
         "psr-11",
         "psr-15"
     ],
-    "homepage": "https://mezzio.dev",
+    "homepage": "https://github.com/bharatkumar200/SimplyFramework",
     "support": {
         "docs": "https://docs.mezzio.dev/mezzio/",
-        "issues": "https://github.com/mezzio/mezzio-skeleton/issues",
-        "source": "https://github.com/mezzio/mezzio-skeleton",
-        "rss": "https://github.com/mezzio/mezzio-skeleton/releases.atom",
-        "chat": "https://laminas.dev/chat",
-        "forum": "https://discourse.laminas.dev"
+        "issues": "https://github.com/bharatkumar200/SimplyFramework/issues",
+        "source": "https://github.com/bharatkumar200/SimplyFramework",
+        "rss": "https://github.com/bharatkumar200/SimplyFramework/releases.atom"
     },
     "config": {
         "sort-packages": true,

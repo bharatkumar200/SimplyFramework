@@ -2,12 +2,6 @@
 <module type="WEB_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/src/Admin/src" isTestSource="false" packagePrefix="Admin\" />
-      <sourceFolder url="file://$MODULE_DIR$/src/App/src" isTestSource="false" packagePrefix="App\" />
-      <sourceFolder url="file://$MODULE_DIR$/src/Auth/src" isTestSource="false" packagePrefix="Auth\" />
-      <sourceFolder url="file://$MODULE_DIR$/src/Core/src" isTestSource="false" packagePrefix="Core\" />
-      <sourceFolder url="file://$MODULE_DIR$/test" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/test/AppTest" isTestSource="true" packagePrefix="AppTest\" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/auth0/auth0-php" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/brick/varexporter" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/composer" />
