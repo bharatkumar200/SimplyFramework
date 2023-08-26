@@ -2,6 +2,14 @@
 
 This is a fullstack PHP Framework based out of [mezzio framework (formerly, Zend Expressive)](https://mezzio.dev).
 
+## Tailwind CSS
+
+Run the command below to compile compressed tailwind css.
+
+```bash
+npx tailwindcss -i ./assets/tailwind.css -o ./public/static/css/tailwind.min.css --minify --watch
+```
+
 ## Mezzio Skeleton and Installer
 
 *Begin developing PSR-15 middleware applications in seconds!*
