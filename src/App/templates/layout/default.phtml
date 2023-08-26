@@ -14,9 +14,7 @@
 </head>
 <body>
 
-<header class="mb-10 bg-emerald-600 text-white text-center p-4">
-    <a class="text-4xl" href="<?= baseUrl() ?>"><?= setting('app.name') ?></a>
-</header>
+<?= $this->insert('partials::_header') ?>
 
 <div class="w-full md:w-4/5 lg:w-2/3 mx-auto">
     <main class="container p-4">
