@@ -62,10 +62,10 @@
         "mezzio/mezzio-platesrenderer": "^2.2",
         "nette/caching": "^3.2",
         "nette/utils": "^4.0",
+        "simplydi/dotenv": "^1.0",
         "simplydi/functions": "dev-main",
         "simplydi/simplyconfig": "dev-main",
-        "simplydi/simplymarkdown": "dev-main",
-        "vlucas/phpdotenv": "^5.5"
+        "simplydi/simplymarkdown": "dev-main"
     },
     "require-dev": {
         "laminas/laminas-development-mode": "^3.3.0",
