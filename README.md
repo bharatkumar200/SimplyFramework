@@ -2,6 +2,8 @@
 
 This is a fullstack PHP Framework based out of [mezzio framework (formerly, Zend Expressive)](https://mezzio.dev).
 
+All the documentation is present in the docs folder. You can delete the docs folder if not needed.
+
 ## Tailwind CSS
 
 Run the command below to compile compressed tailwind css.
