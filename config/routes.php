@@ -43,4 +43,7 @@ return static function (Application $app, MiddlewareFactory $factory, ContainerI
     foreach ($routesArr as $route) {
         $app->route($route["uri"], $route["handler"], $route["methods"], $route["name"]);
     }
+
+    // if you do not prefer to create routes via yaml files, you can create routes here
+    // e.g. $app->get('/', App\Handler\HomePageHandler::class, 'home');
 };
