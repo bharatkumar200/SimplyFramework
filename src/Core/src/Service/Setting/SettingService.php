@@ -15,9 +15,17 @@ class SettingService
         // get a list of yaml files in setting folder
         $yamlFiles = Finder::findFiles("*.yaml")->in(CONFIG_PATH . 'settings');
 
+        // get a list of yaml files in each module folder
+        $modulesYamlFiles = Finder::findFiles('*.yaml')->in(SRC_PATH . '*');
+
         // turn that Finder instance into an array of file paths
         $settingFilesArr = [];
+
         foreach ($yamlFiles as $file) {
+            $settingFilesArr[] = $file->getPathname();
+        }
+
+        foreach ($modulesYamlFiles as $file) {
             $settingFilesArr[] = $file->getPathname();
         }
 

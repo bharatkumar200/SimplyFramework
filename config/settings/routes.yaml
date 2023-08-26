@@ -1,7 +1,0 @@
-routes:
-    -
-      uri: /
-      handler: App\Handler\HomepageHandler
-      methods:
-        - get
-      name: home
