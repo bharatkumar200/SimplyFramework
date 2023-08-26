@@ -1,10 +1,9 @@
 <?php
 
-namespace Core\Service;
+namespace Core\Service\Setting;
 
 use Nette\Utils\Finder;
 use SimplyDi\SimplyConfig\Config as SimplyConfig;
-use Symfony\Component\Yaml\Yaml;
 
 class SettingService
 {

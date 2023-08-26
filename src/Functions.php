@@ -6,7 +6,7 @@
  * This file is loaded automatically via composer.
  */
 
-use Core\Service\SettingService;
+use Core\Service\Setting\SettingService;
 
 if (!function_exists('baseUrl')) {
     function baseUrl(string $path = ''): string
