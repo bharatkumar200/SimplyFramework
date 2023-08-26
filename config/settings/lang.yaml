@@ -1,0 +1,13 @@
+supportedLocales:
+  - en
+  - hi
+
+defaultLocale: en
+
+localeTexts:
+  en:
+    hello: Hello World
+    welcome: Welcome to SimplyDi Framework
+  hi:
+    hello: हैलो वर्ल्ड
+    welcome: सिंपलीडी फ्रेमवर्क में आपका स्वागत है
